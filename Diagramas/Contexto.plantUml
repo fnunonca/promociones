@@ -1,0 +1,27 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define DEVICONS2 https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons2
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+!include DEVICONS/angular.puml
+!include DEVICONS/java.puml
+!include DEVICONS/msql_server.puml
+!include FONTAWESOME/users.puml
+!include DEVICONS2/vuejs.puml
+
+!define DEVICONS2 https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons2
+!include DEVICONS2/csharp.puml
+
+LAYOUT_WITH_LEGEND()
+
+Person(user, "Usuarios", "", $sprite="users")
+Container(spa, "SPA", " Vue 2 ", "Web Application", $sprite="vuejs")
+Container(apiGenera, "API", " dotNet 5 ", "WebApi Genera Promocion", $sprite="csharp")
+ContainerDb(db, "Promociones", "Microsoft SQL 2016", "Base de datos de Promociones", $sprite="msql_server")
+
+Rel(user, spa, "Uses", "https")
+Rel(spa, apiGenera, "Uses", "https")
+Rel_D(apiGenera, db, "Uses", "tcp/ip")
+
+@enduml

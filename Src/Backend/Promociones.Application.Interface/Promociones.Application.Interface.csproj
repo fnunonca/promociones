@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Promociones.Application.DTO\Promociones.Application.DTO.csproj" />
+    <ProjectReference Include="..\Promociones.Transversal.Common\Promociones.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>

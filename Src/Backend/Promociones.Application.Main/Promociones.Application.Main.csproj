@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Promociones.Application.DTO\Promociones.Application.DTO.csproj" />
+    <ProjectReference Include="..\Promociones.Application.Interface\Promociones.Application.Interface.csproj" />
+    <ProjectReference Include="..\Promociones.Domain.Entity\Promociones.Domain.Entity.csproj" />
+    <ProjectReference Include="..\Promociones.Domain.Interface\Promociones.Domain.Interface.csproj" />
+  </ItemGroup>
+
+</Project>
