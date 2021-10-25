@@ -1,5 +1,7 @@
 # promociones
 web app de promociones
+para ver el diagrama pegar el codigo del archivo Diagramas\Contexto.plantUml en http://www.plantuml.com/
+
 
 01 - Base de datos: SQL Server - Ejecutar el scripts.sql
 
